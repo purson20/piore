@@ -302,14 +302,12 @@ body{
 #logo_banner{
     background: url(../images/logo_banner_1.jpg) no-repeat;
     height: 788px;
-    padding-bottom: 700px;
-    position: relative;
+    padding-bottom: 300px;
 }
 
 .logo_img{
-    position: absolute;
-    top: 8%;
-    left: 38%;
+    text-align: center;
+    padding-top: 100px;
 }
 
 .lt{
@@ -317,9 +315,8 @@ body{
     font-weight: 500;
     color: #fff;
     white-space: nowrap;
-    position: absolute;
-    top: 43%;
-    left: 21%;
+    text-align: center;
+    padding-top: 70px;
 }
 
 .piore_text_4{
