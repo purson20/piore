@@ -1,0 +1,667 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #53393e;
+}
+
+video, iframe, image{
+    vertical-align: middle;
+}
+
+img, video{
+    max-width: 100%;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+/*
+font-family: 'Canela Text Trial', sans-serif;
+font-family: 'Canela Trial', sans-serif;
+font-family: 'Canela Condensed Trial', sans-serif;
+font-family: 'Canela Deck Trial', sans-serif;
+*/
+
+body{
+    font-family: 'Pretendard-Regular';
+    font-size: 16px;
+    line-height: 24px;
+    color: #53393e;
+}
+
+/*header*/
+
+#header{
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/*gnb*/
+
+#gnb{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 18px;
+}
+
+#gnb li{
+    padding: 30px;
+}
+
+#gnb .gt:hover{
+    border-bottom: 2px solid #53393e;
+    padding-bottom: 10px;
+    transition: 0.3s;
+}
+
+/*icon*/
+
+#icon{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#icon li{
+    padding: 10px;
+}
+
+/*main title*/
+
+#main_title{
+    background: url(../images/main_title.jpg) no-repeat center top;
+    height: 300px;
+    margin-bottom: 250px;
+}
+
+#top_product_1{
+    width: 1320px;
+    margin: 0 auto;
+}
+
+
+#top_product_1{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#top_product_2{
+    width: 1320px;
+    margin: 0 auto;
+}
+
+
+#top_product_2{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 150px;
+}
+
+.top_text_1{
+    padding: 100px;
+    text-align: center;
+}
+
+.top_text_2{
+    padding: 100px;
+    text-align: center;
+}
+
+.top_title_text_1{
+    font-size: 28px;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+.top_title_text_2{
+    font-size: 28px;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+.product_name_1{
+    font-size: 18px;
+    font-family: 'Canela Trial', sans-serif;
+    font-weight: 300;
+    padding-bottom: 5px;
+}
+
+.product_name_1 span{
+    font-size: 28px;
+    font-weight: 400;
+    color: #f1999a;
+}
+
+.product_name_2{
+    font-size: 18px;
+    font-family: 'Canela Trial', sans-serif;
+    font-weight: 300;
+    padding-bottom: 5px;
+}
+
+.product_name_2 span{
+    font-size: 28px;
+    font-weight: 400;
+    color: #7d94c0;
+}
+
+.tag{
+    font-size: 18px;
+    line-height: 20px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.product_img_1{
+    width: 700px;
+    height: 450px;
+    position: relative;
+    background-position: center;
+    background-size: 100% 100%;
+    background-image: url(../images/best_p_1.png);
+    transition: 0.5s ease;
+}
+
+.product_img_1:hover{
+    background-image: url(../images/best_p_3.png);
+    transition: 0.5s ease;
+}
+
+.product_img_2{
+    width: 700px;
+    height: 450px;
+    position: relative;
+    background-position: center;
+    background-size: 100% 100%;
+    background-image: url(../images/best_p_2.png);
+    transition: 0.5s ease;
+}
+
+.product_img_2:hover{
+    background-image: url(../images/best_p_4.png);
+    transition: 0.5s ease;
+}
+
+/*new*/
+
+#new{
+    background-color: #fce6e6;
+    width: 100%;
+    height: 1153px;
+    margin-bottom: 250px;
+}
+
+#new .new_inner{
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 130px;
+}
+
+#new .n_title{
+    font-size: 34px;
+    font-family: 'Canela Trial', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 100px;
+}
+
+#new .n_img{
+    display: flex;
+    justify-content: space-between;;
+}
+
+#new ul li{
+    width: 97%;
+    overflow: hidden;
+}
+
+/*nb_box_1*/
+
+.nb_box_1{
+    position: relative;
+}
+
+.nb_box_1:hover .nb_1{
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.text_inner_1{
+    position: absolute;
+    z-index: 1;
+    top: 60px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    opacity: 0;
+    filter: blur(10px);
+}
+
+.nb_box_1:hover .text_inner_1{
+    opacity: 100%;
+    filter: blur(0);
+    transition: 0.5s;
+}
+
+/*nb_box_2*/
+
+.nb_box_2{
+    position: relative;
+}
+
+.nb_box_2:hover .nb_2{
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.nb_box_2:hover .text_inner_2{
+    opacity: 100%;
+    filter: blur(0);
+    transition: 0.5s;
+}
+
+.text_inner_2{
+    position: absolute;
+    z-index: 1;
+    top: 60px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    opacity: 0;
+    filter: blur(10px);
+}
+
+.nbt_2{
+    white-space:nowrap;
+}
+
+/*nb_box_3*/
+
+.nb_box_3{
+    position: relative;
+}
+
+.nb_box_3:hover .nb_3{
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.nb_box_3:hover .text_inner_3{
+    opacity: 100%;
+    filter: blur(0);
+    transition: 0.5s;
+}
+
+.text_inner_3{
+    position: absolute;
+    z-index: 1;
+    top: 60px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    opacity: 0;
+    filter: blur(10px);
+}
+
+.nbt_3{
+    white-space:nowrap;
+}
+
+/*nb_box_4*/
+
+.nb_box_4{
+    position: relative;
+}
+
+.nb_box_4:hover .nb_4{
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.nb_box_4:hover .text_inner_4{
+    opacity: 100%;
+    filter: blur(0);
+    transition: 0.5s;
+}
+
+.text_inner_4{
+    position: absolute;
+    z-index: 1;
+    top: 60px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    opacity: 0;
+    filter: blur(10px);
+}
+
+.nbt_4{
+    white-space:nowrap;
+}
+
+.nb_title{
+    font-family: 'Canela Trial', sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+}
+
+.nb_sub_title{
+    font-family: 'Canela Trial', sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    padding-top: 10px;
+    padding-bottom: 60px;
+}
+
+.de{
+    font-family: 'Canela Trial', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    padding-bottom: 30px;
+}
+
+.pe{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+
+/*hand cream*/
+
+
+.hb_1{
+    position: relative;
+    width: 620px;
+    height: 800px;
+    overflow: hidden;
+    border-radius: 50px 50px 50px 50px;
+}
+
+/*
+.hb_1:hover img{
+    transform: scale(1.1, 1.1);
+    transition: 1s;
+}
+*/
+
+.hb_2{
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+}
+
+.hct_1{
+    font-size: 60px;
+    line-height: 55px;
+    font-family: 'Canela Trial', sans-serif;
+    white-space:nowrap;
+    padding-bottom: 20px;
+}
+
+.hct_2{
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 400;
+}
+
+
+
+/*f_banner*/
+
+#f_banner{
+    background: url(../images/pf_banner.jpg) no-repeat center center fixed;
+    height: 285px;
+    margin-bottom: 250px;
+}
+
+.f_banner_inner{
+    text-align: center;
+    padding-top: 110px;
+}
+
+
+/*btn*/
+
+.bt1{
+    color: #53393e;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.bt1 a{
+    border: 2px solid #53393e;
+    background-color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    transition: 0.5s ease;
+}
+
+.bt1 a:hover{
+    background-color: #53393e;
+    color: #fff;
+    transition: 0.5s ease;
+}
+
+.bt1_1{
+    color: #53393e;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.bt1_1 a{
+    border: 2px solid #53393e;
+    border-radius: 0 10px 0 10px;
+    background-color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    transition: 0.5s ease;
+}
+
+.bt1_1 a:hover{
+    background-color: #53393e;
+    color: #fff;
+    transition: 0.5s ease;
+}
+
+.bt1_2{
+    color: #53393e;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.bt1_2 a{
+    border: 2px solid #53393e;
+    border-radius: 10px 0 10px 0;
+    background-color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    transition: 0.5s ease;
+}
+
+.bt1_2 a:hover{
+    background-color: #53393e;
+    color: #fff;
+    transition: 0.5s ease;
+}
+
+.bt1_3{
+    color: #53393e;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.bt1_3 a{
+    border: 2px solid #53393e;
+    border-radius: 10px 0 10px 0;
+    background-color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    transition: 0.5s ease;
+}
+
+.bt1_3 a:hover{
+    background-color: #53393e;
+    color: #fff;
+    transition: 0.5s ease;
+}
+
+.bt1_4{
+    color: #53393e;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.bt1_4 a{
+    border: 2px solid #53393e;
+    border-radius: 0 10px 0 10px;
+    background-color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    transition: 0.5s ease;
+}
+
+.bt1_4 a:hover{
+    background-color: #53393e;
+    color: #fff;
+    transition: 0.5s ease;
+}
+
+/*product*/
+
+
+.product_m_inner{
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 200px;
+}
+
+
+.prd_1{
+    border: 3px solid #e798a3;
+    border-radius: 160px 160px 0 0;
+    width: 310px;
+    height: 570px;
+    overflow: hidden;
+}
+
+#product_m .prd_1 .bi:hover{
+    transform: scale(1.1, 1.1);
+}
+
+.bi{
+    transition: 0.5s;
+}
+
+.prd_text{
+    text-align: center;
+    padding-top: 35px;
+    font-family: 'Canela Trial', sans-serif;
+}
+
+.ht{
+    padding-bottom: 10px;
+}
+
+.prd_name{
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+.prd_sub_name{
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 300;
+    font-family: 'Canela Trial', sans-serif;
+}
+
+.prd_number{
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: 300;
+}
+
+.price{
+    font-size: 22px;
+    line-height: 22px;
+    font-family: 'Pretendard-Regular';
+    padding-top: 10px;
+}
+
+
+/*footer*/
+
+#footer{
+    background: url(../images/footer.png) no-repeat center top;
+}
+
+.footer_inner{
+    text-align: center;
+    align-items: center;
+    padding-top: 120px;
+    padding-bottom: 30px;
+}
+
+.footer_text{
+    font-size: 14px;
+    line-height: 24px;
+    color: #53393e;
+}
+
+.footer_logo{
+    padding-bottom: 20px;
+}
+
+/*btn*/
+
+#btn{
+    position: fixed;
+    right: 80px;
+    bottom: 80px;
+}
+
+#btn a img{
+    display: flex;
+    padding: 5px 0;
+}
+
+.btn_1 img:hover{
+    transform: rotateY(360deg);
+    transition: 1s;
+}
+
+.btn_2 img:hover{
+    transform: rotateY(360deg);
+    transition: 1s;
+}
+
+.btn_3 img:hover{
+    transform: rotateY(360deg);
+    transition: 1s;
+}
